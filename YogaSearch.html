@@ -1,0 +1,98 @@
+<head>
+  <title>YogaSearch</title>
+  <script type="text/javascript">
+    function updateTextInput(val) {
+      document.getElementById('textInput').value=val; 
+    }
+  </script>
+</head>
+
+<body>
+  <h1 class="text-center">Welcome to YogaOffline</h1>
+  {{> searchbar}}
+ 
+  {{> searchoptions}}
+
+</body>                                                       
+<template name="searchbar">
+		<form class="center-block text-center">
+		
+		Type Of Yoga : <input type="text"  name="typeOfYoga" placeholder="type of yoga">
+
+		City : <input type="text"  name="city"  placeholder="name of city">
+		
+		<br>
+		
+		Free Trial : <input type="radio"  name="freeTrial" value="Yes" > 
+
+		Yes
+			<input type="radio"  name="freeTrial" value="No" >
+		 No 
+		<br>
+		<br>
+		
+		<div> Price Range : <input type="text"  id="textInput" value="" disabled></div>
+		<input type="range" name="priceRange" min="0" max="2000" step="100" value="2000" class="center-block" style="width:25%" onchange="updateTextInput(this.value);">
+		
+		<br>
+		Sort by : 
+		<select name="sort">
+			<option value="price"> Price</option>
+			<option value="city"> City </option>
+			<option value="srno"> Sr No.</option>
+		</select> 
+		<button type="submit"> Submit</button>
+		</form>
+		
+
+		<div class="container-fluid">
+		<h1 class="text-center">Filter and Sort Results</h1>
+	<table class="table table-striped">
+		<tr>
+			<th>Sr No. </th>
+			<th>Name </th>
+			<th>Type of Yoga</th>
+			<th>City</th>
+			<th>Price</th>
+			<th>Free Trial</th>
+		</tr>
+		{{#each meteoryoga}}
+			{{> display}}
+		{{/each}}
+		</table>
+		</div>
+		</template>
+
+
+<template name="searchoptions">
+	<div class="container-fluid">
+	<h1 class="text-center">This is the Database just for reference purpose </h1>
+	<table class="table table-striped">
+		<tr>
+			<th>Sr No. </th>
+			<th>Name </th>
+			<th>Type of Yoga</th>
+			<th>City</th>
+			<th>Price</th>
+			<th>Free Trial</th>
+		</tr>
+		{{#each yoga}}
+			{{> display}}
+		{{/each}}
+		</table>
+		</div>
+</template>
+
+
+
+
+<template name="display">
+<tr>
+	<td> {{srno}} </td>
+	<td> {{name}} </td>
+	<td> {{type}} </td>
+	<td> {{city}} </td>
+	<td> {{price}} </td>
+	<td> {{freetrial}} </td>
+</tr>
+</template>

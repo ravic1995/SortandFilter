@@ -1,0 +1,137 @@
+var mydocs = [{
+  "srno" : 1 ,
+  "name" : "Abc" ,
+  "type" : "Bikram" ,
+  "city" : "Mumbai" ,
+  "price": 900 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 2 ,
+  "name" : "Adc" ,
+  "type" : "Hatha" ,
+  "city" : "Delhi" ,
+  "price": 2000 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 3 ,
+  "name" : "Akc" ,
+  "type" : "Ashtanga" ,
+  "city" : "Kolkata" ,
+  "price": 1200 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 4 ,
+  "name" : "Lk kks" ,
+  "type" : "Bikram" ,
+  "city" : "Gurgoan" ,
+  "price": 1900 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 5 ,
+  "name" : "Jikl " ,
+  "type" : "Hatha" ,
+  "city" : "Delhi" ,
+  "price": 2000 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 6 ,
+  "name" : "Kiol " ,
+  "type" : "Ashtanga" ,
+  "city" : "Chennai" ,
+  "price": 200 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 7 ,
+  "name" : "Adc" ,
+  "type" : "Hastha" ,
+  "city" : "Delhi" ,
+  "price": 180 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 8 ,
+  "name" : "Abc" ,
+  "type" : "Bikram" ,
+  "city" : "Kolkata" ,
+  "price": 900 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 9 ,
+  "name" : "Adc" ,
+  "type" : "Hastha" ,
+  "city" : "Delhi" ,
+  "price": 2000 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 10 ,
+  "name" : "Abc" ,
+  "type" : "Bikram" ,
+  "city" : "Mumbai" ,
+  "price": 1450 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 11 ,
+  "name" : "Adc" ,
+  "type" : "Hatha" ,
+  "city" : "Gurgoan" ,
+  "price": 2000 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 12 ,
+  "name" : "Akc" ,
+  "type" : "Ashtanga" ,
+  "city" : "Mumbai" ,
+  "price": 750 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 13 ,
+  "name" : "Lk kks" ,
+  "type" : "Bikram" ,
+  "city" : "Gurgoan" ,
+  "price": 1150 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 14 ,
+  "name" : "Jikl " ,
+  "type" : "Hatha" ,
+  "city" : "Chennai" ,
+  "price": 1800 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 15 ,
+  "name" : "Kiol " ,
+  "type" : "Ashtanga" ,
+  "city" : "Kolkata" ,
+  "price": 1200 ,
+  "freetrial" : "Yes"
+},
+{
+  "srno" : 16 ,
+  "name" : "Abc" ,
+  "type" : "Bikram" ,
+  "city" : "Delhi" ,
+  "price": 800 ,
+  "freetrial" : "No"
+},
+{
+  "srno" : 17 ,
+  "name" : "Adc" ,
+  "type" : "Hastha" ,
+  "city" : "Mumbai" ,
+  "price": 1700 ,
+  "freetrial" : "Yes"
+}];
+db.yoga.insert(mydocs);
